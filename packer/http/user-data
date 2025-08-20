@@ -1,0 +1,10 @@
+#cloud-config
+autoinstall:
+  version: 1
+  identity:
+    hostname: packer
+    username: packer
+    password: "$6$xyz$abcdefghijklmnopqrstuv"   # пароль "packer" (захэширован)
+  ssh:
+    install-server: true
+    authorized-keys: []
